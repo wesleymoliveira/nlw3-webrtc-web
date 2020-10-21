@@ -1,0 +1,16 @@
+
+.logo{
+    height: 4rem;
+    position: absolute;
+    top: 10px;
+    right: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+  }
+  
+  .logo .logoImage{
+    height: inherit;
+    width: auto;
+  }

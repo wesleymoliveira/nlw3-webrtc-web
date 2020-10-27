@@ -11,13 +11,13 @@ interface User {
 interface ResponseSignInUser {
   token: string;
   user: User;
-  error?: string;
+  /* error?: string; */
 }
 
 interface AuthContextData {
   signed: boolean;
   user: User | null;
-  error: string | null;
+  /* error: string | null; */
   loading: boolean;
   signIn(
     email: string,
@@ -29,7 +29,7 @@ const AuthContext = createContext<AuthContextData>({} as AuthContextData);
 
 export const AuthProvider: React.FC = ({children}) => { 
   const [user, setUser] = useState<User | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  //const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] =useState(true);
 
   useEffect(()=> {
@@ -51,10 +51,10 @@ export const AuthProvider: React.FC = ({children}) => {
     
     const response = await api.post<ResponseSignInUser>('/sessions', { email, password });
     
-    if (response.data.error) { 
+   /*  if (response.data.error) { 
       setError(JSON.stringify(response.data.error));
     }
-
+ */
     if (response.data.user) { 
       setUser(response.data.user);
       //console.log(response.data.user)
@@ -78,7 +78,7 @@ export const AuthProvider: React.FC = ({children}) => {
    }
  
   return (
-  <AuthContext.Provider value={{ signed: !!user, user, error, loading, signIn, signOut }} >
+  <AuthContext.Provider value={{ signed: !!user, user, loading, signIn, signOut }} >
     {children}
   </AuthContext.Provider>
   );

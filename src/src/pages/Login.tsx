@@ -3,8 +3,8 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import api from '../services/api';
 import { withRouter, useHistory } from 'react-router-dom';
-import loginFormValidator from '../services/loginFormValidator';
-import signUpFormValidator from '../services/signUpFormValidator';
+//import loginFormValidator from '../services/loginFormValidator';
+//import signUpFormValidator from '../services/signUpFormValidator';
 
 import '../styles/pages/login.css';
 import {useAuth} from '../contexts/auths';
@@ -12,7 +12,7 @@ import {useAuth} from '../contexts/auths';
 import MainCard from '../components/MainCard';
 
 const Login: React.FC = () => {
-  const { signed, signIn, error}= useAuth();
+  const { signed, signIn}= useAuth();
   const history = useHistory();
  
   const [name, setName] = useState('');
@@ -49,7 +49,7 @@ const Login: React.FC = () => {
     try {
       await signIn(email, password_hash);
       history.push("/map");
-    } catch (e) { 
+    } catch (error) { 
       toast.error(error);
     }
   };

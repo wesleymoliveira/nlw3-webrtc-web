@@ -7,6 +7,11 @@ const io = socket(server);
 const username = require('username-generator');
 const path = require('path');
 const cors = require('cors');
+const { AwakeHeroku } = require('awake-heroku');
+
+AwakeHeroku.add({
+    url: "https://happy-backend-2020.herokuapp.com"
+})
 
 
 app.use(cors());

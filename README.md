@@ -1,11 +1,15 @@
 
-![Logo](/web/assets/logo nlw 3.jpg)
+![Logo](https://raw.githubusercontent.com/wesleymoliveira/nlw3-webrtc-web/main/web/assets/logo%20nlw%203.jpg)
 ## NEXT LEVEL WEEK #03 - HAPPY
 
 https://happy-nlw3-wesley.herokuapp.com/
 
+- [Call Example](https://happy-nlw3-wesley.herokuapp.com/)
+
 Access HERE:
 - [NLW 3 - wesley](https://happy-nlw3-wesley.herokuapp.com/)
+
+
 
 <p>
 Bring <strong> happiness </strong> to the world, visit <strong>orphanages</strong> and change the day
@@ -23,7 +27,7 @@ of many <strong>children.</strong></p>
   **Next Level Week** is an online event with lots of code, challenges, networking and a single objective: to take you to the next level.
 ##### Desenvolved by [Rocketseat](https://rocketseat.com.br).
 
-## Unique Features | Extra miles
+##  Unique Features | Extra miles
   - [x] Login JWT
   - [x] WebRTC + Socket.io
   - [x] Toast Messages
@@ -49,7 +53,7 @@ of many <strong>children.</strong></p>
 <img src="/web/assets/mobile-call.jpeg"/>
 
 #### Call From Mobile
-<img src="/web/assets/webrtc.jpeg"/>
+<img src="/web/assets/webrtc.png"/>
 
 #### Create Orphanage (Screen)
 <img src="/web/assets/Happy (6).jpeg"/>

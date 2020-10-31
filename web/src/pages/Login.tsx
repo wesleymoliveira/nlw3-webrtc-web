@@ -10,6 +10,7 @@ import '../styles/pages/login.css';
 import {useAuth} from '../contexts/auths';
 
 import MainCard from '../components/MainCard';
+import { stringify } from 'querystring';
 
 const Login: React.FC = () => {
   const { signed, signIn}= useAuth();
@@ -40,7 +41,20 @@ const Login: React.FC = () => {
       toast.success('Cadastro realizado com sucesso. Faça o login.');
       history.push("/login");              
     } catch(error) {
-      toast.error('Falha no cadastro');
+      if (error.response) {
+        toast.error(error.response.data.error);
+        
+        if (error.response.data.errors.name){
+          toast.error("O campo NOME é obrigatório")
+        }
+        if (error.response.data.errors.email) {
+          toast.error("Por favor, utilize um EMAIL VÁLIDO")
+        }
+        if (error.response.data.errors.password_hash) {
+          toast.error("O campo SENHA deve conter pelo menos 6 dígitos")
+        }
+        
+      }
     }
   };
   
@@ -50,7 +64,9 @@ const Login: React.FC = () => {
       await signIn(email, password_hash);
       history.push("/map");
     } catch (error) { 
-      toast.error(error);
+      if (error.response) {
+        toast.error(error.response.data.error);
+      }     
     }
   };
 

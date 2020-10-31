@@ -4,7 +4,7 @@
 
 https://happy-nlw3-wesley.herokuapp.com/
 
-- [Call Example](https://happy-nlw3-wesley.herokuapp.com/)
+- [Call Example](https://github.com/wesleymoliveira/nlw3-webrtc-web/blob/main/web/assets/happy.gif)
 
 Access HERE:
 - [NLW 3 - wesley](https://happy-nlw3-wesley.herokuapp.com/)

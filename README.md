@@ -25,7 +25,7 @@ of many <strong>children.</strong></p>
 
 ## NLW#3
   **Next Level Week** is an online event with lots of code, challenges, networking and a single objective: to take you to the next level.
-##### Desenvolved by [Rocketseat](https://rocketseat.com.br).
+##### Developed with [Rocketseat](https://rocketseat.com.br).
 
 ##  Unique Features | Extra miles
   - [x] Login JWT

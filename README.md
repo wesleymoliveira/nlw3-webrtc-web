@@ -10,7 +10,6 @@ Access HERE:
 - [NLW 3 - wesley](https://happy-nlw3-wesley.herokuapp.com/)
 
 
-
 <p>
 Bring <strong> happiness </strong> to the world, visit <strong>orphanages</strong> and change the day
 of many <strong>children.</strong></p>
